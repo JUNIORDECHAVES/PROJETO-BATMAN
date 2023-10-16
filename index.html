@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="media-query.css" media="screen">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+    <title>cine-batman</title>
+</head>
+<body>
+    <header>
+        <span class="material-symbols-outlined" onclick="abriNav()" id="icone">Menu</span>
+        <img src="MIDIAS/logo-do-batman.png" id="logo" alt="logo-do-Batman">
+        <nav>
+            <ul>
+                <a href="index.html"><li>HOME</li></a>
+                <a href="contato.html"><li>CONTATO</li></a>
+                <a href="foto.html"><li>FOTOS</li></a>
+                <a href="comentarios.html"><li>COMENTÁRIOS</li></a>
+            </ul>
+        </nav>
+    </header>
+    <nav class="footer-navegation" id="nav-1">
+        <ul class="footer-list">
+            <a href="index.html"><li>HOME</li></a>
+            <a href="contato.html"><li>CONTATO</li></a>
+            <a href="foto.html"><li>FOTOS</li></a>
+            <a href="comentarios.html"><li>COMENTÁRIOS</li></a>
+        </ul>
+    </nav>
+    <div id="banner">
+    </div>
+    <div id="trailer-conteiner">
+        <div id="content">
+            <video controls class="trailer">
+                <source src="MIDIAS/The Batman - Trailer Principal.mp4" type="video/mp4" >
+                seu navegador não tem suporte para video
+            </video>
+            <div id="sinopse">
+                <p class="description">
+                    Após dois anos espreitando as ruas como Batman, Bruce Wayne se encontra nas profundezas mais sombrias de Gotham City. Com poucos aliados confiáveis, o vigilante solitário se estabelece como a personificação da vingança para a população.
+                </p>
+                <button class="butao">comprar ingresso</button>
+            </div>
+        </div>
+    </div>
+    
+    <div class="actor-cards-conteiner">
+        <div class="card-conteiner">
+            <div class="card banner-1">Robert Pattison - Batman</div>
+            <div class="card banner-2">Zoe Kravitz - Mulher Gato</div>
+            <div class="card banner-3">Jeffrey wright - Gordon</div>
+        </div>
+    </div>
+
+    <footer>
+        <img style="object-fit: contain;" src="MIDIAS/logo-do-batman.png">
+        <span>todos os direitos reservados ©️</span>
+        <span>desenvolvido por: Junior Chaves</span>
+
+        <nav class="footer-navegation" id="nav-1">
+            <ul class="footer-list">
+                <a href="index.html"><li>HOME</li></a>
+                <a href="contato.html"><li>CONTATO</li></a>
+                <a href="foto.html"><li>FOTOS</li></a>
+                <a href="comentarios.html"><li>COMENTÁRIOS</li></a>
+            </ul>
+        </nav>
+    </footer>
+    <script>
+        
+        function abriNav() {
+            let navegacao = document.querySelector("#nav-1")
+            let icone = document.querySelector("#icone")
+            if (navegacao.style.display == 'flex') {
+                icone.innerHTML = "Menu"
+                navegacao.style.display = 'none';
+            } else {
+                navegacao.style.display = "flex";
+                icone.innerHTML = 'Close'
+            }
+        }
+    </script>
+</body>
+</html>
