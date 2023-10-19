@@ -201,6 +201,7 @@ footer {
         }
 
         #icone {
+            display: block;
             cursor: pointer;
             font-size: 40px;
             margin-left: 10px;
